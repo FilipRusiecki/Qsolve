@@ -1,0 +1,49 @@
+@import '@fontsource-variable/montserrat';
+@import '@fontsource-variable/work-sans';
+
+/**
+ * START --- SETUP TAILWINDCSS EDIT
+ *
+ * `yarn rw setup ui tailwindcss` placed these directives here
+ * to inject Tailwind's styles into your CSS.
+ * For more information, see: https://tailwindcss.com/docs/installation
+ */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/**
+ * END --- SETUP TAILWINDCSS EDIT
+ */
+
+:root {
+  --qs-black: #000000;
+  --qs-ink: #111111;
+  --qs-green: #0b8005;
+  --qs-gold: #dbc06f;
+  --qs-paper: #ffffff;
+  --qs-muted: #6b7280;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: var(--qs-paper);
+  color: var(--qs-ink);
+  font-family: 'Work Sans Variable', 'Work Sans', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Montserrat Variable', Montserrat, system-ui, sans-serif;
+}
