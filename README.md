@@ -11,7 +11,7 @@ Marketing site for **QSolve**. Starts with a simple homepage to validate the sha
 | Styling | Tailwind CSS 3 |
 | Animation | Framer Motion |
 | Package manager | Yarn 4 (workspaces: `web`, `api`) |
-| Node | 20.x |
+| Node | 24.x |
 | Hosting | Vercel |
 
 ## Local development

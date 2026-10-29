@@ -13,7 +13,7 @@ yarn rw build
 - RedwoodJS 8.9 (`web` + `api`)
 - React 18 + Vite
 - Tailwind CSS 3 + Framer Motion
-- Yarn 4 · Node 20
+- Yarn 4 · Node 24
 - Vercel (`vercel.json` Corepack + `yarn rw build`)
 
 ## What’s here now
