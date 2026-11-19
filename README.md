@@ -1,57 +1,41 @@
 # QSolve
 
-Marketing site for **QSolve**. Starts with a simple homepage to validate the shared Redwood stack and solo GitHub → Vercel workflow.
+Exact static copy of the live site **https://qsolve.ie/**, ready to deploy and connect to that domain.
 
-## Stack
+## What’s live in production
 
-| Layer | Technology |
-|--------|------------|
-| Framework | RedwoodJS 8.9 |
-| UI | React 18 + Vite |
-| Styling | Tailwind CSS 3 |
-| Animation | Framer Motion |
-| Package manager | Yarn 4 (workspaces: `web`, `api`) |
-| Node | 24.x |
-| Hosting | Vercel |
+| Path | Purpose |
+|------|---------|
+| `public-site/` | Full website (HTML + CSS + JS + images + logos) — **this is what Vercel deploys** |
+| `DOMAIN.md` | How to connect **qsolve.ie** / **www.qsolve.ie** on Vercel |
+| `site-mirror/` | Raw crawl archive (reference) |
 
-## Local development
+## Preview locally
 
 ```bash
-yarn install
-yarn rw dev
+cd public-site
+python3 -m http.server 8765
 ```
 
-Open [http://localhost:8910](http://localhost:8910).
+Open [http://localhost:8765](http://localhost:8765).
 
-## Build
+## Deploy (Vercel) + domain
 
-```bash
-yarn rw build
-```
+1. Push this repo to your GitHub
+2. Vercel → **Add New Project** → import repo (framework: Other)
+3. Confirm output directory is `public-site` (`vercel.json` sets this)
+4. Follow **`DOMAIN.md`** to attach `qsolve.ie`
 
-## Deploy (Vercel)
+## Editing
 
-1. Push this repo to GitHub under your account (you push; no Cursor collaborator)
-2. Vercel → **Add New Project** → import this repository
-3. `vercel.json` enables Corepack and `yarn rw build`
-4. Add env vars on that Vercel project when you add a database / auth later
+Edit HTML under `public-site/` (e.g. `public-site/about-us/index.html`). Assets live in `public-site/wp-content/`.
+
+## Optional Redwood stack
+
+The `web/` + `api/` RedwoodJS app remains for a future React rebuild. It is **not** what deploys right now.
 
 ## Docs
 
-- `STACK_AND_SETUP.md` — this project’s commands and deploy notes
-- `SITE_TEMPLATE.md` — **reusable checklist** for the next client site
-- `BRAND_COLORS.md` — QSolve colour + type tokens
-
-## Project layout
-
-```
-qsolvewebsite/
-├── api/           # GraphQL API + Prisma (ready for later features)
-├── web/           # React frontend
-│   └── src/
-│       ├── components/
-│       └── pages/HomePage/
-├── redwood.toml
-├── vercel.json
-└── package.json
-```
+- `DOMAIN.md` — DNS / Vercel domain steps for **qsolve.ie**
+- `STACK_AND_SETUP.md` — Redwood commands (optional)
+- `BRAND_COLORS.md` — brand tokens

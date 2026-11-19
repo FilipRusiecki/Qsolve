@@ -22,3 +22,10 @@ api/src/lib/generateGraphiQLHeader.*
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+
+# Videos too large for GitHub (100MB limit)
+*.mp4
+*.mov
+
+# Raw crawl backup (duplicate of public-site)
+site-mirror/

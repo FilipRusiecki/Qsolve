@@ -4,5 +4,8 @@
       "ENABLE_EXPERIMENTAL_COREPACK": "1"
     }
   },
-  "buildCommand": "yarn rw build --verbose"
+  "buildCommand": "echo 'Static public-site deploy (exact qsolve.ie mirror)'",
+  "outputDirectory": "public-site",
+  "trailingSlash": true,
+  "cleanUrls": true
 }
