@@ -1,0 +1,181 @@
+/* QSolve global site styles — keep header consistent on every page */
+
+#preloader{
+  display:none!important;
+  visibility:hidden!important;
+  opacity:0!important;
+  pointer-events:none!important;
+}
+
+/* Solid gray nav bar in document flow (same on every page) */
+header,
+header.transparent,
+header.de_header_2,
+header.smaller,
+header.smaller.transparent,
+header.header-light,
+header.scroll-light,
+header.header-bg,
+header.autoshow,
+header.autoshow.scrollOn,
+header.autoshow.scrollOff{
+  position:relative!important;
+  top:0!important;
+  left:0!important;
+  width:100%!important;
+  background:#222327!important;
+  background-color:#222327!important;
+  background-image:none!important;
+  height:auto!important;
+  min-height:0!important;
+  padding-top:0!important;
+  padding-bottom:0!important;
+  transition:none!important;
+  border:none!important;
+  box-shadow:none!important;
+  opacity:1!important;
+}
+
+header > .container,
+header.transparent > .container,
+header.smaller > .container,
+header.scroll-light > .container{
+  background:#222327!important;
+  background-color:#222327!important;
+  max-width:100%!important;
+  width:100%!important;
+  padding-top:4px!important;
+  padding-bottom:4px!important;
+  padding-left:40px!important;
+  padding-right:40px!important;
+  box-sizing:border-box;
+  min-height:0!important;
+}
+
+#mainmenu{
+  background:transparent!important;
+  padding:0!important;
+  border-radius:0!important;
+  display:block!important;
+  margin-top:8px!important;
+}
+
+#mainmenu > li > a,
+header.smaller #mainmenu > li > a,
+header.transparent #mainmenu > li > a,
+header.scroll-light #mainmenu > li > a{
+  font-weight:300!important;
+  font-size:16px!important;
+  color:#fff!important;
+  letter-spacing:.02em;
+  padding-top:8px!important;
+  padding-bottom:8px!important;
+  transition:color .2s ease!important;
+}
+
+/* Top-level only: green on hover / active */
+#mainmenu > li > a:hover,
+#mainmenu > li:hover > a,
+#mainmenu > li.current-menu-item > a,
+#mainmenu > li.current_page_item > a,
+#mainmenu > li.current-menu-ancestor > a,
+header.smaller #mainmenu > li > a:hover,
+header.smaller #mainmenu > li:hover > a,
+header.transparent #mainmenu > li > a:hover{
+  color:#1a8b49!important;
+  font-weight:300!important;
+  background:transparent!important;
+}
+
+/* Dropdown panel: gray; green ONLY on hover */
+#mainmenu ul.sub-menu,
+#mainmenu li ul{
+  background:#222327!important;
+  border:none!important;
+  padding:0!important;
+  margin-top:0!important;
+  top:100%!important;
+}
+#mainmenu li li,
+#mainmenu ul.sub-menu li{
+  background:#222327!important;
+  margin:0!important;
+  padding:0!important;
+  border:none!important;
+}
+#mainmenu li li a,
+#mainmenu ul.sub-menu li a,
+#mainmenu li li.current-menu-item > a,
+#mainmenu li li.current_page_item > a,
+#mainmenu ul.sub-menu .current-menu-item > a,
+#mainmenu ul.sub-menu .current_page_item > a{
+  background:#222327!important;
+  font-weight:300!important;
+  font-size:14px!important;
+  color:#fff!important;
+  display:block!important;
+  width:100%!important;
+}
+#mainmenu li li a:hover,
+#mainmenu ul.sub-menu li a:hover,
+#mainmenu li li:hover > a,
+#mainmenu ul.sub-menu li:hover > a{
+  background:#1a8b49!important;
+  color:#fff!important;
+}
+
+/* Logo: larger, fixed — no jump on scroll/hover */
+#logo,
+header.smaller #logo,
+.smaller #logo,
+header.transparent #logo{
+  position:relative!important;
+  z-index:2;
+  margin:4px 0!important;
+  top:0!important;
+  left:auto!important;
+  transition:none!important;
+  transform:none!important;
+}
+
+#logo a,
+#logo img,
+#logo .logo,
+#logo .logo-2,
+header.smaller #logo img,
+header.smaller #logo .logo,
+header.smaller #logo .logo-2,
+header.transparent #logo img,
+.smaller #logo img{
+  width:200px!important;
+  height:auto!important;
+  max-height:72px!important;
+  margin:0!important;
+  top:0!important;
+  transition:none!important;
+  transform:none!important;
+}
+
+#logo:hover,
+#logo:hover img,
+#logo a:hover img{
+  transform:none!important;
+  margin:0!important;
+}
+
+/* Equal gallery tiles sitewide */
+#gallery .picframe{
+  height:220px!important;
+  overflow:hidden!important;
+  display:block!important;
+}
+#gallery .picframe img{
+  width:100%!important;
+  height:220px!important;
+  object-fit:cover!important;
+  object-position:center center!important;
+  display:block!important;
+}
+
+/* Keep top utility strip hidden — nav bar only */
+header .info{display:none!important;}

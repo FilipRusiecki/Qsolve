@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en" class="">
 <head>
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="https://qsolve.ie/xmlrpc.php">
 
-<title>Gallery 4 Columns &#8211; QSolve</title>
+<title>Pharmaceutical Projects &#8211; QSolve</title>
 <meta name='robots' content='max-image-preview:large' />
 <link rel='dns-prefetch' href='//maps.google.com' />
 <link rel='dns-prefetch' href='//fonts.googleapis.com' />
@@ -285,6 +288,18 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 #preloader{display:none!important;visibility:hidden!important;opacity:0!important;pointer-events:none!important}
 </style>
 
+
+<style id="qsolve-projects-gallery-css">
+#gallery .picframe{height:220px!important;overflow:hidden!important;display:block!important}
+#gallery .picframe img{width:100%!important;height:220px!important;object-fit:cover!important;object-position:center!important;display:block!important}
+#gallery.gallery .item,#gallery .item{width:25%!important;float:left}
+@media(max-width:991px){#gallery.gallery .item,#gallery .item{width:50%!important}}
+@media(max-width:575px){#gallery.gallery .item,#gallery .item{width:100%!important}}
+.qsolve-cat-intro{max-width:900px;margin:0 auto 30px;padding:10px 20px 20px;color:#555;font-size:15px;line-height:1.7}
+.qsolve-cat-intro h2{margin-bottom:12px;color:#222}
+</style>
+
+<link rel="stylesheet" id="qsolve-site-css" href="/wp-content/themes/buildpro/css/qsolve-site.css?v=20261120c" media="all" />
 </head>
 
 <body class="wp-singular page-template page-template-page-templates page-template-template-fullwidth page-template-page-templatestemplate-fullwidth-php page page-id-200 wp-theme-buildpro buildpro-theme-ver-1.1.6 wordpress-version-7.1.4 wpb-js-composer js-comp-ver-8.7.2 vc_responsive" >
@@ -341,21 +356,15 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 <ul class="sub-menu">
 	<li id="menu-item-850" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-850"><a href="/projects-4-columns/">Education</a></li>
 	<li id="menu-item-846" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-846"><a href="/projects-grid-4-columns/">Residential</a></li>
-	<li id="menu-item-854" class="menu-item menu-item-type-post_type menu-item-object-portfolio menu-item-854"><a href="/portfolio/green-house/">Fire Remediation</a></li>
+	<li id="menu-item-854" class="menu-item menu-item-type-post_type menu-item-object-portfolio menu-item-854"><a href="/projects-fire-remediation/">Fire Remediation</a></li>
 	<li id="menu-item-860" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-200 current_page_item menu-item-860"><a href="/gallery-4-columns/" aria-current="page">Pharmaceutical</a></li>
-	<li id="menu-item-859" class="menu-item menu-item-type-post_type menu-item-object-portfolio menu-item-859"><a href="/portfolio/green-house/">Health Care</a></li>
-	<li id="menu-item-856" class="menu-item menu-item-type-post_type menu-item-object-portfolio menu-item-856"><a href="/portfolio/twin-tower/">Data Centers</a></li>
+	<li id="menu-item-859" class="menu-item menu-item-type-post_type menu-item-object-portfolio menu-item-859"><a href="/projects-healthcare/">Health Care</a></li>
+	<li id="menu-item-856" class="menu-item menu-item-type-post_type menu-item-object-portfolio menu-item-856"><a href="/projects-data-centres/">Data Centers</a></li>
 </ul>
 </li>
 <li id="menu-item-870" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-870"><a href="/our-services/">Services</a>
-<ul class="sub-menu">
+<ul class="sub-menu" data-qsolve-services="all-only-v3">
 	<li id="menu-item-871" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-871"><a href="/our-services/">All Services</a></li>
-	<li id="menu-item-872" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-872"><a href="/services/general-consulting/">Feasibility &#038; Cost Planning</a></li>
-	<li id="menu-item-873" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-873"><a href="/services/construction-management/">Procurement &#038; Tendering</a></li>
-	<li id="menu-item-874" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-874"><a href="/services/design-and-build/">Cost Management &#038; Valuations</a></li>
-	<li id="menu-item-875" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-875"><a href="/services/preconstruction-consulting/">Final Accounts</a></li>
-	<li id="menu-item-876" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-876"><a href="/services/special-projects/">Claims &#038; Dispute Resolution</a></li>
-	<li id="menu-item-877" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-877"><a href="/services/renovations/">Bank &#038; Funder Monitoring</a></li>
 </ul>
 </li>
 <li id="menu-item-881" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-881"><a href="/about-us/">About Us</a>
@@ -383,7 +392,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h1>Gallery 4 Columns</h1>
+                    <h1>Pharmaceutical Projects</h1>
                     <div class="small-border-deco"><span></span></div>
                        
                         <div class="crumb">
@@ -396,172 +405,33 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
     
 
     <div class="wpb-content-wrapper"><section class="vc_rows wpb_row vc_row-fluid vc_custom_1481011115060"><div class="container"><div class="row"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
-		<div class="container project-filter">
+		<div class="container"><div class="qsolve-cat-intro"><h2>Pharmaceutical</h2><p>QSolve has extensive experience delivering quantity surveying and commercial management services across the industrial, manufacturing, and pharmaceutical sectors. Our experience ranges from large-scale process and production facilities, including live manufacturing and processing plants, through to smaller civil, structural, and architectural packages delivered within highly regulated operational environments. We understand the unique challenges associated with working in live facilities where safety, programme certainty, operational continuity, and strict compliance requirements are critical to project success.</p></div></div>
+<div id="gallery" class="gallery full-gallery de-gallery pf_full_width pf_4_cols gallery_border grid_gallery">
+                <div class="item pharma ">
+            <div class="picframe">
+            	                <a href="/portfolio/modern-office/">
+                                    <span class="overlay">
+                        <span class="pf_text">
+                            <span class="project-name">Pfizer Campus, Newbridge</span>
+                        </span>
+                    </span>
+                </a>
+                <img decoding="async" src="/wp-content/uploads/john-projects/pharma/pharma-02.png" alt="Pfizer Campus, Newbridge" />
+            </div>
+        </div>
+                <div class="item pharma ">
+            <div class="picframe">
+            	                <a href="/portfolio/cube-office/">
+                                    <span class="overlay">
+                        <span class="pf_text">
+                            <span class="project-name">Schering Plough, Rathdrum</span>
+                        </span>
+                    </span>
+                </a>
+                <img decoding="async" src="/wp-content/uploads/john-projects/pharma/pharma-01.jpeg" alt="Schering Plough, Rathdrum" />
+            </div>
+        </div>
 
-        <!-- portfolio filter begin -->
-        <div class="row">
-        	            <div class="col-md-12 text-center">
-                <ul id="filters">
-                    <li><a href="#" data-filter="*" class="selected">All Projects</a></li>
-                				      	<li><a href="#" data-filter=".commercial">Commercial</a></li>
-			    				      	<li><a href="#" data-filter=".education">Education</a></li>
-			    				      	<li><a href="#" data-filter=".hospitaly">Hospitaly</a></li>
-			    				      	<li><a href="#" data-filter=".office">Office</a></li>
-			    				      	<li><a href="#" data-filter=".residential">Residential</a></li>
-			    	                </ul>
-            </div>
-                    </div>
-        <!-- portfolio filter close -->
-
-    </div>
-    
-	<div id="gallery" class="gallery full-gallery de-gallery pf_full_width pf_4_cols gallery_border grid_gallery">
-
-                <div class="item residential ">
-            <div class="picframe">
-            	            	<a class="image-popup-gallery" href="/wp-content/uploads/2016/12/pf-1-1.jpg">
-            	                    <span class="overlay">
-                        <span class="pf_text">
-                            <span class="project-name">Green House</span>
-                        </span>
-                    </span>
-                </a>
-                <img decoding="async" src="/wp-content/uploads/2016/12/pf-1-1.jpg" alt="" />
-            </div>
-        </div>
-                <div class="item commercial education ">
-            <div class="picframe">
-            	            	<a class="image-popup-gallery" href="/wp-content/uploads/2016/12/pf-2-1.jpg">
-            	                    <span class="overlay">
-                        <span class="pf_text">
-                            <span class="project-name">Contemporary Building</span>
-                        </span>
-                    </span>
-                </a>
-                <img decoding="async" src="/wp-content/uploads/2016/12/pf-2-1.jpg" alt="" />
-            </div>
-        </div>
-                <div class="item commercial hospitaly ">
-            <div class="picframe">
-            	            	<a class="image-popup-gallery" href="/wp-content/uploads/2016/12/pf-3-1.jpg">
-            	                    <span class="overlay">
-                        <span class="pf_text">
-                            <span class="project-name">Twin Tower</span>
-                        </span>
-                    </span>
-                </a>
-                <img decoding="async" src="/wp-content/uploads/2016/12/pf-3-1.jpg" alt="" />
-            </div>
-        </div>
-                <div class="item commercial hospitaly ">
-            <div class="picframe">
-            	            	<a class="image-popup-gallery" href="/wp-content/uploads/2016/12/pf-4-1.jpg">
-            	                    <span class="overlay">
-                        <span class="pf_text">
-                            <span class="project-name">Modern Skyline</span>
-                        </span>
-                    </span>
-                </a>
-                <img decoding="async" src="/wp-content/uploads/2016/12/pf-4-1.jpg" alt="" />
-            </div>
-        </div>
-                <div class="item commercial office ">
-            <div class="picframe">
-            	            	<a class="image-popup-gallery" href="/wp-content/uploads/2016/12/pf-5-1.jpg">
-            	                    <span class="overlay">
-                        <span class="pf_text">
-                            <span class="project-name">Modern Office</span>
-                        </span>
-                    </span>
-                </a>
-                <img decoding="async" src="/wp-content/uploads/2016/12/pf-5-1.jpg" alt="" />
-            </div>
-        </div>
-                <div class="item residential ">
-            <div class="picframe">
-            	            	<a class="image-popup-gallery" href="/wp-content/uploads/2016/12/pf-6-1.jpg">
-            	                    <span class="overlay">
-                        <span class="pf_text">
-                            <span class="project-name">Country Side House</span>
-                        </span>
-                    </span>
-                </a>
-                <img decoding="async" src="/wp-content/uploads/2016/12/pf-6-1.jpg" alt="" />
-            </div>
-        </div>
-                <div class="item education office ">
-            <div class="picframe">
-            	            	<a class="image-popup-gallery" href="/wp-content/uploads/2016/12/pf-7-1.jpg">
-            	                    <span class="overlay">
-                        <span class="pf_text">
-                            <span class="project-name">Cube Office</span>
-                        </span>
-                    </span>
-                </a>
-                <img decoding="async" src="/wp-content/uploads/2016/12/pf-7-1.jpg" alt="" />
-            </div>
-        </div>
-                <div class="item residential ">
-            <div class="picframe">
-            	            	<a class="image-popup-gallery" href="/wp-content/uploads/2016/12/pf-8-1.jpg">
-            	                    <span class="overlay">
-                        <span class="pf_text">
-                            <span class="project-name">London Luxury House</span>
-                        </span>
-                    </span>
-                </a>
-                <img decoding="async" src="/wp-content/uploads/2016/12/pf-8-1.jpg" alt="" />
-            </div>
-        </div>
-                <div class="item office ">
-            <div class="picframe">
-            	            	<a class="image-popup-gallery" href="/wp-content/uploads/2016/12/pf-9-1.jpg">
-            	                    <span class="overlay">
-                        <span class="pf_text">
-                            <span class="project-name">Uptown University</span>
-                        </span>
-                    </span>
-                </a>
-                <img decoding="async" src="/wp-content/uploads/2016/12/pf-9-1.jpg" alt="" />
-            </div>
-        </div>
-                <div class="item residential ">
-            <div class="picframe">
-            	            	<a class="image-popup-gallery" href="/wp-content/uploads/2016/12/pf-10-1.jpg">
-            	                    <span class="overlay">
-                        <span class="pf_text">
-                            <span class="project-name">Sentra Hospital</span>
-                        </span>
-                    </span>
-                </a>
-                <img decoding="async" src="/wp-content/uploads/2016/12/pf-10-1.jpg" alt="" />
-            </div>
-        </div>
-                <div class="item hospitaly ">
-            <div class="picframe">
-            	            	<a class="image-popup-gallery" href="/wp-content/uploads/2016/12/pf-11-1.jpg">
-            	                    <span class="overlay">
-                        <span class="pf_text">
-                            <span class="project-name">Deluxe Residence</span>
-                        </span>
-                    </span>
-                </a>
-                <img decoding="async" src="/wp-content/uploads/2016/12/pf-11-1.jpg" alt="" />
-            </div>
-        </div>
-                <div class="item commercial ">
-            <div class="picframe">
-            	            	<a class="image-popup-gallery" href="/wp-content/uploads/2016/12/pf-12-1.jpg">
-            	                    <span class="overlay">
-                        <span class="pf_text">
-                            <span class="project-name">Suburban Office</span>
-                        </span>
-                    </span>
-                </a>
-                <img decoding="async" src="/wp-content/uploads/2016/12/pf-12-1.jpg" alt="" />
-            </div>
-        </div>
-        
     </div>
 
         <style type="text/css">
@@ -629,11 +499,10 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 
 	<div class="col-md-4">
 	    <div id="text-4" class="widget footer-widget widget_text"><h3>Contact Us</h3>			<div class="textwidget"><address>
-                                <span>Collins Street West, Victoria 8007 Australia</span>
-                                <span><strong>Phone:</strong>(208) 333 9296</span>
-                                <span><strong>Fax:</strong>(208) 333 9298</span>
-                                <span><strong>Email:</strong><a href="mailto:contact@buildpro.com">contact@buildpro.com</a></span>
-                                <span><strong>Web:</strong><a href="#">http://buildpro-construction.com</a></span>
+                                <span>Wexford, Ireland</span>
+                                <span><strong>Phone:</strong>(+353) 89 657 5009</span>
+                                <span><strong>Email:</strong><a href="mailto:john@qsolve.ie">john@qsolve.ie</a></span>
+                                <span><strong>Web:</strong><a href="https://www.qsolve.ie">www.qsolve.ie</a></span>
                             </address></div>
 		</div>	</div><!-- end col-lg-3 -->
 
@@ -646,15 +515,14 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        © Copyright 2026 - BuildPro by Digital House                    
+                        © Copyright 2026 - QSolve                    
                     </div>
                     <div class="col-md-6 text-right">
                                                                             <div class="social-icons">
                                                                 <a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                                                <a href="https://www.twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                                                <a href="https://www.instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                                                                 <a href="https://plus.google.com/"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                                                                <a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a>
-                                                                <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+                                                                <a href="mailto:john@qsolve.ie"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
                                                             </div>
                                             </div>
                 </div>
